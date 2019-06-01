@@ -459,10 +459,10 @@ Draw.loadPlugin(function (ui) {
                                 texts[labelIndex].value = '<span>' + c4Name + '</span><div>[Container:&nbsp;<span>' + c4Technology + '</span><span>]</span></div><div><br></div><div>' + c4Description + '</div>';
                                 break;
                             case 'Component':
-                                texts[labelIndex].value = '<div style="font-size: 14px;font-weight: bold;">' + c4Name + '</div>'+
-                                    '<div style="font-size: 9px;">[Component:&nbsp;<span>' + c4Technology + '</span><span>]</span></div>'+
+                                texts[labelIndex].value = '<div style="font-size: 14px;font-weight: bold;ont-family: Tahoma;">' + c4Name + '</div>'+
+                                    '<div style="font-size: 9px;font-family: Courier New;">[Component:&nbsp;<span>' + c4Technology + '</span><span>]</span></div>'+
                                     '<div><br></div>'+
-                                    '<div>' + c4Description + '</div>';
+                                    '<div style="font-family: Tahoma;">' + c4Description + '</div>';
                                 break;
                             case 'Relationship':
                                 texts[labelIndex].value = '<div style="text-align: left"><div style="text-align: center"><b>' + c4Description + '</b></div><div style="text-align: center">[' + c4Technology + ']</div></div>';
