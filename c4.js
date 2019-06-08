@@ -460,7 +460,7 @@ Draw.loadPlugin(function (ui) {
                                 break;
                             case 'Component':
                                 texts[labelIndex].value = '<div style="font-size: 14px;font-weight: bold;ont-family: Tahoma;">' + c4Name + '</div>'+
-                                    '<div style="font-size: 9px;font-family: Courier New;">[Component:&nbsp;<span>' + c4Technology + '</span><span>]</span></div>'+
+                                    '<div style="font-size: 9px;font-family: Courier New;">[Technologies:&nbsp;<span>' + c4Technology + '</span><span>]</span></div>'+
                                     '<div><br></div>'+
                                     '<div style="font-family: Tahoma;">' + c4Description + '</div>';
                                 break;
