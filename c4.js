@@ -467,8 +467,9 @@ Draw.loadPlugin(function (ui) {
                                 texts[labelIndex].value = '<div style="font-size: 14px;font-weight: bold;ont-family: Tahoma;">' + c4Name + '</div>'+
                                     '<div style="font-size: 9px;font-family: Courier New;">[Technologies:&nbsp;<span>' + c4Technology + '</span><span>]</span></div>'+
                                     '<div><br></div>'+
-                                    '<div style="font-family: Tahoma;">' + c4Description + '</div>'
-                                    '<div style="font-famil:Tahoma; margin-top:3px;">' + c4Owner + '</div>';
+                                    '<div style="font-family: Tahoma;">' + c4Description + '</div>' +
+                                    '<div><br></div>' +
+                                    '<div style="font-family: Tahoma;">[Owner: ' + c4Owner + ']</div>';
                                 break;
                             case 'Relationship':
                                 texts[labelIndex].value = '<div style="text-align: left"><div style="text-align: center"><b>' + c4Description + '</b></div><div style="text-align: center">[' + c4Technology + ']</div></div>';
