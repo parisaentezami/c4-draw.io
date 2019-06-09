@@ -315,6 +315,7 @@ Draw.loadPlugin(function (ui) {
             obj.setAttribute('label', value || '');
             value = obj;
         }
+        value.setAttribute('c4Owner','owner');
         // Creates the dialog contents
         var form = new mxForm('properties');
         form.table.style.width = '100%';
