@@ -348,8 +348,8 @@ Draw.loadPlugin(function (ui) {
             texts[index].value = value;
             return texts[index];
         };
+        console.log(attrs);
         for (var i = 0; i < attrs.length; i++) {
-            console.log(attrs[i]);
             var nodeName = attrs[i].nodeName;
             var nodeValue = attrs[i].nodeValue;
             // if (cell.awssf.hiddenAttributes && cell.awssf.hiddenAttributes.indexOf(nodeName) >= 0) continue;
@@ -470,7 +470,7 @@ Draw.loadPlugin(function (ui) {
                                     '<div><br></div>'+
                                     '<div style="font-family: Tahoma;">' + c4Description + '</div>' +
                                     '<div><br></div>' +
-                                    '<div style="font-family: Tahoma;">[Owner: ' + c4Owner + ']</div>';
+                                    '<div style="font-family: Tahoma;font-size: 11px;">[Owner: ' + c4Owner + ']</div>';
                                 break;
                             case 'Relationship':
                                 texts[labelIndex].value = '<div style="text-align: left"><div style="text-align: center"><b>' + c4Description + '</b></div><div style="text-align: center">[' + c4Technology + ']</div></div>';
