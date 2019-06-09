@@ -420,6 +420,7 @@ Draw.loadPlugin(function (ui) {
                     var c4OperationSystem = '';
                     var c4Application = '';
                     var c4ScalingFactor = '';
+                    var c4Owner = '';
                     var c4Step = 1;
                     var labelIndex = -1;
                     for (var i = 0; i < names.length; i++) {
@@ -446,6 +447,9 @@ Draw.loadPlugin(function (ui) {
                         }
                         if (names[i] === 'label') {
                             labelIndex = i;
+                        }
+                        if(names[i] === 'c4Owner'){
+                            c4Owner = texts[i].value;
                         }
                     }
                     if (labelIndex >= 0) {
