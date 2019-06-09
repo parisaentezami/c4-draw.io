@@ -315,7 +315,7 @@ Draw.loadPlugin(function (ui) {
             obj.setAttribute('label', value || '');
             value = obj;
         }
-        value.setAttribute('c4Owner','owner');
+        //value.setAttribute('c4Owner','owner');
         // Creates the dialog contents
         var form = new mxForm('properties');
         form.table.style.width = '100%';
@@ -349,7 +349,7 @@ Draw.loadPlugin(function (ui) {
             texts[index].value = value;
             return texts[index];
         };
-        console.log(attrs);
+        
         for (var i = 0; i < attrs.length; i++) {
             var nodeName = attrs[i].nodeName;
             var nodeValue = attrs[i].nodeValue;
@@ -471,7 +471,7 @@ Draw.loadPlugin(function (ui) {
                                     '<div><br></div>'+
                                     '<div style="font-family: Tahoma;">' + c4Description + '</div>' +
                                     '<div><br></div>' +
-                                    '<div style="font-family: Tahoma;font-size: 11px;">[Owner: ' + c4Owner + ']</div>';
+                                    '<div style="font-family: Tahoma;font-size: 10px;">[Owner: ' + c4Owner + ']</div>';
                                 break;
                             case 'Relationship':
                                 texts[labelIndex].value = '<div style="text-align: left"><div style="text-align: center"><b>' + c4Description + '</b></div><div style="text-align: center">[' + c4Technology + ']</div></div>';
