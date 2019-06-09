@@ -199,6 +199,7 @@ Draw.loadPlugin(function (ui) {
         c4Component.setAttribute('c4Type', 'Component');
         c4Component.setAttribute('c4Technology', 'technology');
         c4Component.setAttribute('c4Description', 'Beschreibung');
+        c4Component.setAttribute('c4Owner','owner');
         c4Component.c4 = this;
         return c4Component;
     };
