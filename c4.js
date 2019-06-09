@@ -494,6 +494,7 @@ Draw.loadPlugin(function (ui) {
                         removeLabel = removeLabel || cell.c4.applyForm(value, names[i], texts[i]);
                     } else {
                         if (texts[i] === null) {
+                            console.log(names[i]);
                             value.removeAttribute(names[i]);
                         }
                         else {
