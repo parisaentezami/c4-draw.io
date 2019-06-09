@@ -349,6 +349,7 @@ Draw.loadPlugin(function (ui) {
             return texts[index];
         };
         for (var i = 0; i < attrs.length; i++) {
+            conosole.log(attrs[i]);
             var nodeName = attrs[i].nodeName;
             var nodeValue = attrs[i].nodeValue;
             // if (cell.awssf.hiddenAttributes && cell.awssf.hiddenAttributes.indexOf(nodeName) >= 0) continue;
@@ -494,7 +495,6 @@ Draw.loadPlugin(function (ui) {
                         removeLabel = removeLabel || cell.c4.applyForm(value, names[i], texts[i]);
                     } else {
                         if (texts[i] === null) {
-                            console.log(names[i]);
                             value.removeAttribute(names[i]);
                         }
                         else {
