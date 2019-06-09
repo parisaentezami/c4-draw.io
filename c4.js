@@ -349,7 +349,7 @@ Draw.loadPlugin(function (ui) {
             return texts[index];
         };
         for (var i = 0; i < attrs.length; i++) {
-            conosole.log(attrs[i]);
+            console.log(attrs[i]);
             var nodeName = attrs[i].nodeName;
             var nodeValue = attrs[i].nodeValue;
             // if (cell.awssf.hiddenAttributes && cell.awssf.hiddenAttributes.indexOf(nodeName) >= 0) continue;
